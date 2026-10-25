@@ -1,0 +1,1080 @@
+# Online Portfolio Website
+
+Create a modern, responsive, and professional personal portfolio website for a Bachelor of Science in Information Technology student.
+
+The portfolio should showcase my background, technical skills, projects, education, certificates, and contact information.
+
+The website must be beginner-friendly, clean, minimalist, and easy to maintain.
+
+---
+
+# 1. Technology Stack
+
+Use the following technologies:
+
+### Frontend
+- HTML5
+- CSS3
+- JavaScript
+
+### Local Development Environment
+- XAMPP
+
+### Database
+- MySQL / MariaDB through XAMPP
+- phpMyAdmin for database management
+
+### Development Tools
+- Visual Studio Code
+- Android Studio
+- Git
+- GitHub
+- Figma
+
+Do NOT use:
+
+- Python
+- FastAPI
+- React
+- Vue
+- Angular
+- Node.js
+
+Keep the main frontend built using only HTML, CSS, and vanilla JavaScript.
+
+If database communication is required, PHP may be used only as the server-side connection between the website and the MySQL/MariaDB database running through XAMPP.
+
+---
+
+# 2. Project Structure
+
+Organize the project clearly.
+
+Example:
+
+```text
+portfolio/
+│
+├── index.html
+│
+├── about.html
+├── projects.html
+├── contact.html
+│
+├── css/
+│   └── style.css
+│
+├── js/
+│   └── script.js
+│
+├── images/
+│   ├── profile/
+│   ├── projects/
+│   └── certificates/
+│
+├── assets/
+│   └── resume.pdf
+│
+├── php/
+│   ├── db.php
+│   └── contact.php
+│
+└── database/
+    └── portfolio.sql
+```
+
+Keep the structure simple enough for a student project.
+
+---
+
+# 3. Design Style
+
+Create a modern minimalist developer portfolio.
+
+The design should feel:
+
+- Professional
+- Clean
+- Modern
+- Simple
+- Organized
+- Student-friendly
+- Responsive
+
+Use:
+
+- Generous spacing
+- Clean typography
+- Rounded cards
+- Subtle shadows
+- Smooth transitions
+- Modern buttons
+- Simple icons
+- Responsive grids
+- Minimal animations
+
+Avoid:
+
+- Excessive animations
+- Too many colors
+- Overly complicated layouts
+- Distracting backgrounds
+- Fake skill percentages
+- Unnecessary libraries
+
+---
+
+# 4. Color Palette
+
+Use a professional technology-inspired color palette.
+
+Suggested colors:
+
+```text
+Background:
+#0F172A
+
+Secondary Background:
+#1E293B
+
+Primary Accent:
+#3B82F6
+
+Light Background:
+#F8FAFC
+
+Primary Text:
+#F8FAFC
+
+Secondary Text:
+#94A3B8
+```
+
+Include both:
+
+- Dark Mode
+- Light Mode
+
+Save the user's selected theme using JavaScript `localStorage`.
+
+---
+
+# 5. Navigation Bar
+
+Create a sticky navigation bar.
+
+Include:
+
+- Logo / Name
+- Home
+- About
+- Skills
+- Projects
+- Education
+- Certificates
+- Contact
+- Dark/Light Mode Toggle
+
+Desktop:
+
+Display navigation links horizontally.
+
+Mobile:
+
+Use a hamburger menu.
+
+The active navigation item should automatically highlight depending on the current section.
+
+---
+
+# 6. Hero Section
+
+Create a professional landing section.
+
+Include:
+
+- Profile picture
+- My name
+- Professional title
+- Short introduction
+- Call-to-action buttons
+- Social links
+
+Use placeholders for information I haven't provided.
+
+Example:
+
+```text
+Hi, I'm [YOUR NAME]
+
+BS Information Technology Student
+
+I am an Information Technology student interested in web development,
+mobile application development, networking, database management,
+UI/UX design, and building practical digital solutions.
+```
+
+Add buttons:
+
+- View My Projects
+- Download Resume
+- Contact Me
+
+Add social links:
+
+- GitHub
+- LinkedIn
+- Facebook
+
+Use placeholders until actual links are provided.
+
+---
+
+# 7. About Me Section
+
+Create a simple professional About Me section.
+
+Include:
+
+- Short introduction
+- Educational background
+- IT interests
+- Current learning areas
+- Career goals
+
+Do not invent personal information.
+
+Use placeholders whenever information is unavailable.
+
+The section should emphasize interests such as:
+
+- Web Development
+- Mobile Development
+- Networking
+- Database Management
+- UI/UX Design
+- Software Development
+
+---
+
+# 8. Technical Skills
+
+Organize technical skills into categories.
+
+## Programming Languages
+
+Include:
+
+- Java
+- JavaScript
+- Dart
+
+Do NOT include Python.
+
+---
+
+## Web Development
+
+Include:
+
+- HTML5
+- CSS3
+- JavaScript
+- Responsive Web Design
+
+---
+
+## Mobile Development
+
+Include:
+
+- Flutter
+- Dart
+- Android Studio
+
+---
+
+## Database
+
+Include:
+
+- MySQL / MariaDB
+- phpMyAdmin
+- XAMPP
+
+Clearly understand that:
+
+XAMPP is the local development environment.
+
+MySQL/MariaDB is the actual database system.
+
+phpMyAdmin is used to manage the database.
+
+---
+
+## Networking
+
+Include:
+
+- MikroTik
+- Winbox
+- RouterOS
+- DHCP
+- LAN Configuration
+- WLAN Configuration
+- IP Addressing
+- Bandwidth Management
+- Simple Queues
+
+---
+
+## Development Tools
+
+Include:
+
+- Visual Studio Code
+- Android Studio
+- Git
+- GitHub
+- XAMPP
+- phpMyAdmin
+- Figma
+
+Display skills using:
+
+- Cards
+- Badges
+- Technology icons
+
+Do not use fake percentage bars such as:
+
+```text
+JavaScript 90%
+HTML 95%
+Networking 85%
+```
+
+Instead, simply show the technologies that I know or am currently learning.
+
+---
+
+# 9. Projects Section
+
+Create a professional project showcase.
+
+Each project card should contain:
+
+- Project image
+- Project title
+- Project category
+- Short description
+- Technologies used
+- View Project button
+- GitHub button
+- Live Demo button
+
+Only display GitHub or Live Demo buttons when links actually exist.
+
+Create reusable project cards so additional projects can easily be added later.
+
+---
+
+# 10. Featured Projects
+
+Add the following sample projects.
+
+## Humania Donation App
+
+Description:
+
+An item-based donation platform designed to connect donors with individuals who need essential goods.
+
+Possible technologies:
+
+- Flutter
+- Dart
+- Firebase / Firestore
+
+Features may include:
+
+- User requests
+- Donation records
+- Campaigns
+- Organization verification
+- User ratings
+
+---
+
+## Recipe Recommendation App
+
+Description:
+
+An application that recommends recipes based on ingredients available to the user.
+
+Features:
+
+- Ingredient input
+- Recipe recommendations
+- Ingredient matching
+- Match percentage
+- Missing ingredient identification
+
+Technology:
+
+- Flutter
+- Dart
+
+---
+
+## Stockroom Inventory System
+
+Description:
+
+An inventory management system designed to monitor stockroom items, transactions, and inventory updates.
+
+Technology:
+
+- Java
+- MySQL
+- XAMPP
+
+Possible features:
+
+- Login
+- Add item
+- Update item
+- Delete item
+- Search item
+- Inventory monitoring
+- Transaction records
+
+---
+
+## MikroTik Network Configuration
+
+Description:
+
+Networking laboratory projects involving MikroTik RouterOS configuration.
+
+Include topics such as:
+
+- DHCP Server Configuration
+- LAN Configuration
+- WLAN Configuration
+- Wi-Fi Access Point Configuration
+- IP Addressing
+- Bandwidth Management
+- Simple Queues
+- Router Configuration
+
+Technology / Tools:
+
+- MikroTik RouterOS
+- Winbox
+
+---
+
+## Online Portfolio
+
+Include this portfolio itself as one of the projects.
+
+Technology:
+
+- HTML
+- CSS
+- JavaScript
+- XAMPP
+- MySQL / MariaDB
+
+Description:
+
+A personal portfolio website designed to showcase my skills, projects, education, and technical experience.
+
+---
+
+# 11. Project Filtering
+
+Add JavaScript project filters.
+
+Example:
+
+```text
+All
+Web
+Mobile
+Java
+Networking
+Database
+```
+
+When a user selects a category, only matching project cards should appear.
+
+Use vanilla JavaScript.
+
+---
+
+# 12. Education Section
+
+Create an education timeline.
+
+Include:
+
+```text
+Bachelor of Science in Information Technology
+
+[UNIVERSITY NAME]
+
+[START YEAR] – Present
+```
+
+Include optional relevant coursework such as:
+
+- Programming
+- Web Development
+- Database Management
+- Networking
+- Systems Analysis
+- System Integration
+- Data Mining
+- Mobile Application Development
+
+Do not invent the university or dates if they haven't been provided.
+
+---
+
+# 13. Certificates Section
+
+Create certificate cards.
+
+Each certificate should contain:
+
+- Certificate image
+- Certificate title
+- Issuing organization
+- Date issued
+- View Certificate button
+
+Example categories:
+
+- Programming
+- Networking
+- Web Development
+- Database
+- Artificial Intelligence
+- IT Training
+
+Allow certificate images to open inside a modal.
+
+---
+
+# 14. Experience Section
+
+Create an experience section.
+
+If I do not have professional employment experience, do NOT invent jobs.
+
+Instead use:
+
+- Academic Projects
+- Laboratory Activities
+- Technical Projects
+- Group Projects
+- Training
+- Freelance Work, only if actually provided
+- Internship, only if actually provided
+
+Academic technical work can be presented professionally.
+
+---
+
+# 15. Contact Section
+
+Create a professional contact section.
+
+Display:
+
+- Email
+- Location
+- GitHub
+- LinkedIn
+- Facebook
+
+Use placeholders when actual information is unavailable.
+
+Create a contact form containing:
+
+```text
+Name
+
+Email
+
+Subject
+
+Message
+
+Send Message
+```
+
+Add JavaScript validation.
+
+Validate:
+
+- Empty fields
+- Email format
+- Minimum message length
+
+Show helpful validation messages.
+
+---
+
+# 16. XAMPP Contact Form
+
+Create an optional working contact form using XAMPP.
+
+Use:
+
+- HTML for the form
+- CSS for styling
+- JavaScript for validation
+- PHP for server-side processing
+- MySQL/MariaDB for storing messages
+- phpMyAdmin for database management
+
+Create a database named:
+
+```text
+portfolio_db
+```
+
+Create a table named:
+
+```text
+messages
+```
+
+Suggested structure:
+
+```sql
+CREATE TABLE messages (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(150) NOT NULL,
+    subject VARCHAR(200) NOT NULL,
+    message TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+```
+
+The PHP backend should:
+
+1. Connect to the database.
+2. Validate the submitted information.
+3. Use prepared statements.
+4. Insert the message into the database.
+5. Return a success or error response.
+6. Never expose database passwords or SQL errors directly to visitors.
+
+Do not fake successful database submission.
+
+---
+
+# 17. Database Connection
+
+Create:
+
+```text
+php/db.php
+```
+
+For local XAMPP development use configuration similar to:
+
+```text
+Host: localhost
+Database: portfolio_db
+Username: root
+Password: [local XAMPP password]
+```
+
+Do not assume the password is empty.
+
+Make database credentials easy to change.
+
+Use MySQLi or PDO with prepared statements.
+
+---
+
+# 18. Contact Message Administration
+
+Optionally create a simple local admin page for development.
+
+Example:
+
+```text
+admin/messages.php
+```
+
+It should display received portfolio messages in a table containing:
+
+- ID
+- Name
+- Email
+- Subject
+- Message
+- Date
+
+Do not create public access without authentication.
+
+If implementing an admin panel, require a proper login system.
+
+---
+
+# 19. Resume Section
+
+Add a downloadable resume.
+
+Use:
+
+```text
+assets/resume.pdf
+```
+
+Add buttons such as:
+
+- View Resume
+- Download Resume
+
+If the resume file does not exist yet, use a placeholder instead of generating fake information.
+
+---
+
+# 20. Dark and Light Mode
+
+Create a theme switcher using JavaScript.
+
+Requirements:
+
+- Dark theme
+- Light theme
+- Theme icon
+- Smooth transition
+- Save preference using localStorage
+
+The website should remember the selected theme after refreshing.
+
+---
+
+# 21. Scroll Effects
+
+Implement subtle effects using JavaScript and CSS.
+
+Include:
+
+- Smooth scrolling
+- Section reveal animation
+- Navbar active state
+- Back-to-top button
+- Hover effects
+
+Do not make animations distracting.
+
+Prefer CSS transitions and the Intersection Observer API instead of large animation libraries.
+
+---
+
+# 22. Responsive Design
+
+The website must work properly on:
+
+- Large desktop monitors
+- Laptops
+- Tablets
+- Smartphones
+
+Suggested breakpoints:
+
+```css
+1200px
+992px
+768px
+576px
+```
+
+The layout must:
+
+- Avoid horizontal scrolling
+- Resize images correctly
+- Stack cards appropriately
+- Keep readable typography
+- Maintain usable navigation
+- Keep buttons touch-friendly
+
+---
+
+# 23. Accessibility
+
+Use proper accessibility practices.
+
+Include:
+
+- Semantic HTML
+- Correct heading hierarchy
+- Image alt text
+- Keyboard navigation
+- Visible focus states
+- Accessible buttons
+- Proper form labels
+- Sufficient color contrast
+- ARIA attributes only where necessary
+
+---
+
+# 24. SEO
+
+Add basic SEO.
+
+Include:
+
+```html
+<title>[YOUR NAME] | IT Portfolio</title>
+```
+
+Add:
+
+- Meta description
+- Viewport
+- Author
+- Keywords
+- Open Graph metadata
+- Favicon placeholders
+
+Use semantic page structure.
+
+---
+
+# 25. Footer
+
+Create a simple professional footer.
+
+Include:
+
+```text
+© 2026 [YOUR NAME]. All Rights Reserved.
+```
+
+Also include:
+
+- GitHub
+- LinkedIn
+- Facebook
+- Back to top
+
+---
+
+# 26. Code Quality Rules
+
+Write clean and beginner-friendly code.
+
+Requirements:
+
+- Proper indentation
+- Semantic HTML
+- Organized CSS
+- Clear JavaScript
+- Reusable CSS classes
+- Descriptive variable names
+- Useful comments
+- No unnecessary libraries
+- No unnecessary frameworks
+- No duplicate CSS
+- No inline CSS unless necessary
+- No inline JavaScript unless necessary
+
+Do not use pseudo-code.
+
+Provide complete working implementations.
+
+---
+
+# 27. Security
+
+If PHP and MySQL are implemented:
+
+- Use prepared SQL statements.
+- Validate server-side input.
+- Sanitize displayed data.
+- Prevent SQL injection.
+- Prevent XSS.
+- Never expose database credentials publicly.
+- Never trust JavaScript validation alone.
+
+---
+
+# 28. Development Phases
+
+Build the project in the following order.
+
+## Phase 1 — Planning
+
+Define:
+
+- Pages
+- Sections
+- Folder structure
+- Color palette
+- Typography
+
+## Phase 2 — HTML
+
+Build the entire semantic page structure.
+
+## Phase 3 — CSS
+
+Create:
+
+- Layout
+- Navigation
+- Cards
+- Responsive design
+- Dark/light theme
+- Animations
+
+## Phase 4 — JavaScript
+
+Implement:
+
+- Mobile menu
+- Theme switcher
+- Smooth scrolling
+- Project filtering
+- Scroll animations
+- Form validation
+- Back-to-top button
+
+## Phase 5 — Projects
+
+Build reusable project components.
+
+## Phase 6 — XAMPP Database
+
+Configure:
+
+- Apache
+- MySQL/MariaDB
+- phpMyAdmin
+- portfolio_db
+- messages table
+
+## Phase 7 — PHP Integration
+
+Connect the contact form to MySQL.
+
+## Phase 8 — Testing
+
+Test:
+
+- Desktop
+- Mobile
+- Navigation
+- Forms
+- Database
+- Responsive layout
+- Links
+- Accessibility
+
+## Phase 9 — Polish
+
+Improve:
+
+- UI consistency
+- Typography
+- Spacing
+- Animations
+- SEO
+- Accessibility
+- Code organization
+
+## Phase 10 — Deployment
+
+Prepare the portfolio for deployment.
+
+Explain that static hosting such as GitHub Pages cannot run PHP/MySQL.
+
+If the website uses the XAMPP/PHP/MySQL contact system, deployment will require hosting that supports:
+
+- PHP
+- MySQL / MariaDB
+
+Keep the project configurable so the frontend can still be deployed separately if necessary.
+
+---
+
+# 29. Important Instructions
+
+Do not invent any personal information that I haven't provided.
+
+Use placeholders such as:
+
+```text
+[YOUR NAME]
+[YOUR EMAIL]
+[YOUR PHONE]
+[YOUR LOCATION]
+[YOUR GITHUB]
+[YOUR LINKEDIN]
+[YOUR FACEBOOK]
+[YOUR UNIVERSITY]
+[YOUR PROFILE PHOTO]
+```
+
+Do not include Python.
+
+Do not include FastAPI.
+
+The primary website technologies must be:
+
+```text
+HTML
+CSS
+JavaScript
+```
+
+Use XAMPP as the local server environment.
+
+Use MySQL/MariaDB as the database.
+
+Use phpMyAdmin to manage the database.
+
+Use PHP only when server-side/database functionality is necessary.
+
+Prioritize functionality before adding visual effects.
+
+---
+
+# 30. Coding Assistant Instructions
+
+Start by showing the full project directory.
+
+Then build the project step by step.
+
+For every file:
+
+1. Show the exact filename and path.
+2. Explain briefly what the file does.
+3. Provide the complete code.
+4. Do not leave unfinished placeholders in the program logic.
+5. Do not skip required files.
+6. Do not use pseudo-code.
+7. Keep the code understandable for an IT student.
+
+After generating the project, provide instructions for running it using XAMPP:
+
+1. Install/start XAMPP.
+2. Start Apache.
+3. Start MySQL.
+4. Place the project inside `htdocs`.
+5. Open phpMyAdmin.
+6. Create/import `portfolio_db`.
+7. Configure the database connection.
+8. Open the website through `localhost`.
+
+Build the simplest working version first before implementing advanced features.
