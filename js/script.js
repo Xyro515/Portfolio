@@ -125,7 +125,18 @@ contactForm?.addEventListener('submit', async event => {
   status.textContent = 'Sending…';
   try {
     const response = await fetch(contactForm.action, { method: 'POST', body: new FormData(contactForm), headers: { Accept: 'application/json' } });
-    const result = await response.json();
+    const responseText = await response.text();
+    const contentType = response.headers.get('content-type') || '';
+    let result;
+    try {
+      result = JSON.parse(responseText);
+    } catch {
+      const isHtml = contentType.includes('text/html') || /^\s*</.test(responseText);
+      const message = isHtml
+        ? 'The contact server returned an HTML page instead of JSON. Run the site through XAMPP and open it from localhost; static hosting cannot run the PHP endpoint.'
+        : `The contact server returned an invalid response (HTTP ${response.status}).`;
+      throw new Error(message);
+    }
     if (!response.ok || !result.success) throw new Error(result.message || 'The message could not be sent.');
     status.classList.add('success');
     status.textContent = result.message;
