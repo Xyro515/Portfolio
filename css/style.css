@@ -73,7 +73,8 @@ h3 { font-size: 1.18rem; }
 .button.primary { background: var(--accent-strong); color: #fff; }
 .button.secondary { border-color: var(--border); background: var(--surface); }
 .social-links { color: var(--muted); font-size: .78rem; }
-.social-links span { padding-right: 12px; border-right: 1px solid var(--border); }
+.social-links a { padding-right: 12px; border-right: 1px solid var(--border); }
+.social-links a:hover { color: var(--accent); }
 .profile-photo { width: min(100%, 360px); aspect-ratio: 1; justify-self: end; overflow: hidden; border: 1px solid var(--border); border-radius: 38% 62% 55% 45% / 45% 42% 58% 55%; background: linear-gradient(145deg, var(--surface), var(--surface-alt)); box-shadow: var(--shadow); }
 .profile-photo img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 35%; }
 
